@@ -75,9 +75,9 @@ export const App: React.FC = () => {
               </div>
 
               <h1 className="hero-title">
-                Pure monochrome.
+                Rewards program.
                 <br />
-                <em>Evolved</em> on-chain.
+                <em>for real</em> niggas.
               </h1>
 
               <p className="hero-desc">{SITE_CONFIG.subheadline}</p>
