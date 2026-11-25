@@ -141,43 +141,13 @@ export const BlackRnaCard: React.FC = () => {
               />
 
               {/* Top Magnetic Strip */}
-              <div
-                style={{
-                  margin: '-26px -28px 0',
-                  height: '44px',
-                  background: isLightMode ? '#141414' : '#000000',
-                  borderBottom: `1px solid ${
-                    isLightMode ? 'rgba(18,18,18,0.15)' : 'rgba(255,255,255,0.12)'
-                  }`,
-                }}
-              />
+              <div className={`rna-card-magstripe ${isLightMode ? 'is-light' : ''}`} />
 
-              <div style={{ position: 'relative', zIndex: 2 }}>
-                <div
-                  style={{
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '0.62rem',
-                    letterSpacing: '0.16em',
-                    textTransform: 'uppercase',
-                    opacity: 0.55,
-                    marginBottom: '6px',
-                  }}
-                >
+              <div className="rna-card-back-body">
+                <div className="rna-card-meta-label" style={{ marginBottom: '6px' }}>
                   Verified Solana Contract
                 </div>
-                <div
-                  style={{
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '0.72rem',
-                    wordBreak: 'break-all',
-                    padding: '10px 12px',
-                    borderRadius: '10px',
-                    border: `1px solid ${
-                      isLightMode ? 'rgba(18,18,18,0.18)' : 'rgba(255,255,255,0.16)'
-                    }`,
-                    background: isLightMode ? 'rgba(18,18,18,0.04)' : 'rgba(255,255,255,0.04)',
-                  }}
-                >
+                <div className={`rna-card-ca-pill ${isLightMode ? 'is-light' : ''}`}>
                   {SITE_CONFIG.contractAddress}
                 </div>
               </div>

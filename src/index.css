@@ -186,6 +186,11 @@ button {
   align-items: center;
 }
 
+.hero-grid > *,
+.card-showcase-grid > * {
+  min-width: 0;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -217,7 +222,7 @@ button {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 6vw, 5.2rem);
+  font-size: clamp(2.4rem, 6vw, 5.2rem);
   font-weight: 900;
   line-height: 0.98;
   letter-spacing: -0.04em;
@@ -498,6 +503,39 @@ button {
   background: linear-gradient(145deg, #f8f7f3 0%, #e9e7df 100%);
   color: #121212;
   border-color: rgba(18, 18, 18, 0.18);
+}
+
+.rna-card-magstripe {
+  margin: -26px -28px 0;
+  height: 44px;
+  background: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+.rna-card-magstripe.is-light {
+  background: #141414;
+  border-bottom-color: rgba(18, 18, 18, 0.15);
+}
+
+.rna-card-back-body {
+  position: relative;
+  z-index: 2;
+}
+
+.rna-card-ca-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  word-break: break-all;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.rna-card-ca-pill.is-light {
+  border-color: rgba(18, 18, 18, 0.18);
+  background: rgba(18, 18, 18, 0.04);
 }
 
 .rna-card-sheen {
@@ -801,35 +839,191 @@ button {
   .hero-grid,
   .card-showcase-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .steps-grid,
-  .specs-grid {
+  .steps-grid {
     grid-template-columns: 1fr;
+  }
+
+  .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .nav-links {
     display: none;
   }
+
+  .ca-box {
+    max-width: 100%;
+  }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .nav-inner {
+    height: 62px;
+    gap: 12px;
+  }
+
+  .nav-brand {
+    font-size: 1.5rem;
+    gap: 8px;
+  }
+
+  .nav-copy-btn {
+    display: none;
+  }
+
   .hero {
-    padding: 56px 0 64px;
+    padding: 40px 0 56px;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    margin-bottom: 18px;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 24px;
+  }
+
+  .hero-cta-row .btn {
+    width: 100%;
+  }
+
+  .ca-box {
+    padding: 10px 10px 10px 14px;
+    gap: 10px;
+  }
+
+  .ca-value {
+    font-size: 0.76rem;
+  }
+
+  .ca-copy-btn {
+    padding: 7px 11px;
+    font-size: 0.72rem;
+  }
+
+  .hero-emblem-wrap {
+    padding: 28px 18px 20px;
+    border-radius: 22px;
   }
 
   .section {
-    padding: 64px 0;
+    padding: 56px 0;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 7.5vw, 2.4rem);
+  }
+
+  .card-stage {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .rna-card-scene {
+    max-width: 100%;
+    aspect-ratio: 1.55 / 1;
+  }
+
+  .rna-card-face {
+    border-radius: 18px;
   }
 
   .rna-card-front,
   .rna-card-back {
-    padding: 20px;
+    padding: 18px;
+  }
+
+  .rna-card-magstripe {
+    margin: -18px -18px 0;
+    height: 32px;
+  }
+
+  .rna-card-wordmark {
+    font-size: 1.45rem;
+  }
+
+  .rna-card-badge {
+    font-size: 0.56rem;
+    padding: 3px 8px;
+  }
+
+  .rna-card-chip {
+    width: 34px;
+    height: 24px;
+    border-radius: 5px;
   }
 
   .rna-card-helix-holder {
-    width: 112px;
-    height: 165px;
-    right: 10px;
+    width: 96px;
+    height: 146px;
+    right: 8px;
+  }
+
+  .rna-card-meta-label {
+    font-size: 0.52rem;
+  }
+
+  .rna-card-meta-val {
+    font-size: 0.68rem;
+  }
+
+  .rna-card-ca-pill {
+    font-size: 0.64rem;
+    padding: 8px 10px;
+  }
+
+  .card-hint {
+    font-size: 0.66rem;
+    text-align: center;
+  }
+
+  .step-card {
+    padding: 24px 20px;
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-cell {
+    padding: 20px 18px;
+  }
+
+  .footer {
+    padding: 40px 0 36px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .footer-links {
+    gap: 16px;
+  }
+
+  .footer-note {
+    flex-direction: column;
+    gap: 6px;
   }
 }

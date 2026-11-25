@@ -45,7 +45,7 @@ export const App: React.FC = () => {
             <button
               type="button"
               onClick={handleCopyCA}
-              className="btn btn-outline btn-sm"
+              className="btn btn-outline btn-sm nav-copy-btn"
               aria-label="Copy Solana contract address"
             >
               {copied ? <Check size={14} /> : <Copy size={14} />}
