@@ -4,9 +4,9 @@ export const SITE_CONFIG = {
   network: 'Solana',
   // Replace with your live Solana SPL contract address before deploying
   contractAddress: 'RNAs7x9kL2mP4qV8wN3bT6yH1jC5fD9eG2uK4vX8pump',
-  tagline: 'Rewriting the sequence on Solana.',
+  tagline: 'The Black Card Experience for Real Niggas.',
   subheadline:
-    'A monochrome on-chain genetic protocol. Every holder who acquires $RNA through our verified Solana contract address receives the Black RNA Card — a dynamic NFT artifact.',
+    'High end banking rewards programs for real ass niggas. Every holder who acquires $RNA through our verified Solana contract address receives the Black RNA Card — a dynamic NFT artifact.',
   links: {
     buy: 'https://jup.ag',
     dexscreener: 'https://dexscreener.com/solana',
