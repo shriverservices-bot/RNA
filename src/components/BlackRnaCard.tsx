@@ -42,7 +42,7 @@ export const BlackRnaCard: React.FC = () => {
         onClick={() => setIsFlipped((f) => !f)}
         role="button"
         tabIndex={0}
-        aria-label="Interactive Black RNA Card NFT. Hover to tilt, click to flip."
+        aria-label="The N-word Pass is Granted"
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
@@ -64,9 +64,8 @@ export const BlackRnaCard: React.FC = () => {
                 className="rna-card-sheen"
                 style={{
                   opacity: glare.opacity,
-                  background: `radial-gradient(circle at ${glare.x}% ${glare.y}%, rgba(255,255,255,${
-                    isLightMode ? 0.65 : 0.28
-                  }) 0%, rgba(255,255,255,0) 60%)`,
+                  background: `radial-gradient(circle at ${glare.x}% ${glare.y}%, rgba(255,255,255,${isLightMode ? 0.65 : 0.28
+                    }) 0%, rgba(255,255,255,0) 60%)`,
                 }}
               />
 
@@ -74,9 +73,8 @@ export const BlackRnaCard: React.FC = () => {
               <div
                 className="rna-card-helix-holder"
                 style={{
-                  transform: `translateY(-50%) translate3d(${tilt.rotateY * -0.45}px, ${
-                    tilt.rotateX * 0.45
-                  }px, 24px)`,
+                  transform: `translateY(-50%) translate3d(${tilt.rotateY * -0.45}px, ${tilt.rotateX * 0.45
+                    }px, 24px)`,
                 }}
               >
                 <DnaStrand stroke={strokeColor} accent={accentColor} />
@@ -118,7 +116,7 @@ export const BlackRnaCard: React.FC = () => {
               <div className="rna-card-bottom">
                 <div className="rna-card-meta-group">
                   <span className="rna-card-meta-label">Artifact ID</span>
-                  <span className="rna-card-meta-val">RNA-0001 / GENESIS</span>
+                  <span className="rna-card-meta-val">RNA-0001 / REAL NIGGA VERIFIED</span>
                 </div>
                 <div className="rna-card-meta-group" style={{ textAlign: 'right' }}>
                   <span className="rna-card-meta-label">Ticker</span>
@@ -134,9 +132,8 @@ export const BlackRnaCard: React.FC = () => {
                 className="rna-card-sheen"
                 style={{
                   opacity: glare.opacity,
-                  background: `radial-gradient(circle at ${100 - glare.x}% ${glare.y}%, rgba(255,255,255,${
-                    isLightMode ? 0.55 : 0.22
-                  }) 0%, rgba(255,255,255,0) 60%)`,
+                  background: `radial-gradient(circle at ${100 - glare.x}% ${glare.y}%, rgba(255,255,255,${isLightMode ? 0.55 : 0.22
+                    }) 0%, rgba(255,255,255,0) 60%)`,
                 }}
               />
 
