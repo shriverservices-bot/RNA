@@ -36,7 +36,7 @@ export const App: React.FC = () => {
           </a>
 
           <nav className="nav-links" aria-label="Primary">
-            <a href="#artifact">Black RNA Card</a>
+            <a href="#artifact">Black Card</a>
             <a href="#protocol">How It Works</a>
             <a href="#specs">Specifications</a>
           </nav>
@@ -94,7 +94,7 @@ export const App: React.FC = () => {
                 </a>
                 <a href="#artifact" className="btn btn-outline">
                   <Sparkles size={15} />
-                  Inspect Black RNA Card
+                  Inspect Black Card
                 </a>
               </div>
 
@@ -126,7 +126,7 @@ export const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Interactive Black RNA Card Showcase */}
+        {/* Interactive Black Card Showcase */}
         <section id="artifact" className="section section-dark">
           <div className="container">
             <div className="card-showcase-grid">
@@ -135,10 +135,10 @@ export const App: React.FC = () => {
               <div>
                 <div className="section-header" style={{ marginBottom: '28px' }}>
                   <span className="section-kicker">01 / Holder Artifact</span>
-                  <h2 className="section-title">The Black RNA Card</h2>
+                  <h2 className="section-title">The Black Card</h2>
                   <p className="section-subtitle">
                     Every wallet that purchases {SITE_CONFIG.ticker} through our official Solana
-                    contract address qualifies for the Black RNA Card — a kinetic, monochrome NFT
+                    contract address qualifies for the Black Card — a kinetic, monochrome NFT
                     etched with our signature helix strand.
                   </p>
                 </div>
@@ -190,7 +190,7 @@ export const App: React.FC = () => {
               <h2 className="section-title">From swap to artifact in three steps.</h2>
               <p className="section-subtitle">
                 Built natively for Solana speed. Acquire {SITE_CONFIG.ticker}, verify your wallet,
-                and hold your Black RNA Card.
+                and hold your Black Card.
               </p>
             </div>
 
@@ -215,9 +215,9 @@ export const App: React.FC = () => {
 
               <article className="step-card">
                 <span className="step-index">STEP 03</span>
-                <h3>Receive the Black RNA Card</h3>
+                <h3>Receive the Black Card</h3>
                 <p>
-                  Qualified holders receive their Black RNA Card NFT directly to their Solana
+                  Qualified holders receive their Black Card NFT directly to their Solana
                   wallet—displaying the helix emblem on-chain.
                 </p>
               </article>

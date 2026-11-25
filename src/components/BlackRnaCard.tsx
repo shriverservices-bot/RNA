@@ -74,7 +74,7 @@ export const BlackRnaCard: React.FC = () => {
                 className="rna-card-helix-holder"
                 style={{
                   transform: `translateY(-50%) translate3d(${tilt.rotateY * -0.45}px, ${tilt.rotateX * 0.45
-                    }px, 24px)`,
+                    }px, 0)`,
                 }}
               >
                 <DnaStrand stroke={strokeColor} accent={accentColor} />
@@ -94,7 +94,7 @@ export const BlackRnaCard: React.FC = () => {
                       marginTop: '6px',
                     }}
                   >
-                    Black RNA Card
+                    BLACK CARD
                   </div>
                 </div>
                 <span className="rna-card-badge">Solana NFT</span>

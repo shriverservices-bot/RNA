@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   contractAddress: 'RNAs7x9kL2mP4qV8wN3bT6yH1jC5fD9eG2uK4vX8pump',
   tagline: 'The Black Card Experience for Real Niggas.',
   subheadline:
-    'High end banking rewards programs for real ass niggas. Every holder who acquires $RNA through our verified Solana contract address receives the Black RNA Card — a dynamic NFT artifact.',
+    'High end banking rewards programs for real ass niggas. Every holder who acquires $RNA through our verified Solana contract address receives the Black Card — a dynamic NFT artifact.',
   links: {
     buy: 'https://jup.ag',
     dexscreener: 'https://dexscreener.com/solana',
@@ -18,7 +18,7 @@ export const SITE_CONFIG = {
     { label: 'Network', value: 'Solana SPL' },
     { label: 'Ticker', value: '$RNA' },
     { label: 'Total Supply', value: '1,000,000,000' },
-    { label: 'Artifact', value: 'Black RNA Card (NFT)' },
+    { label: 'Artifact', value: 'Black Card (NFT)' },
     { label: 'Mint Mechanics', value: '1 Card per Verified Holder' },
     { label: 'Tax / Fees', value: '0% Buy / 0% Sell' },
   ],
